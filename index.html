@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Bank account app</title>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link type="text/css" rel="stylesheet" href="./stylesheet.css" />
+</head>
+
+<body>
+  <div id="display">
+    <h1>Bank Account App</h1>
+
+    <div class="currentInfo">
+      <div class="current">
+        Current balance
+        <div class="currentAmount" id="currentBalance">
+          £0
+        </div>
+      </div>
+      <div class="current">
+        Overdraft
+        <div class="currentAmount" id="currentOverdraft">
+          £0
+        </div>
+      </div>
+      <div class="current">
+        Overdraft Limit
+        <div class="currentAmount" id="overdraftLimit">
+          £500
+        </div>
+      </div>
+    </div>
+
+    <div class="messageInfo">
+      <p id="message">
+        <!-- inelegantly added a 'line break' below by using alt-0160. If I use <br> here, how would I check
+                for/replace with <br> to clear any message that's already displayed, before running script function? -->
+      </p>
+    </div>
+
+    <div id="changeInfo">
+      <div id="deposit" class="change">
+        <form id="formDeposit">
+          <span class="leftColumn">
+            £
+            <input
+              type="number"
+              class="input"
+              id="depositAmt"
+              name="deposit"
+              step="0.01"
+            />
+          </span>
+          <span class="rightColumn">
+            <input type="submit" class="bigButton" value="Deposit" />
+          </span>
+        </form>
+      </div>
+      <!-- can also use button instead of input, same result. For button, easier to style the text within-->
+      <div id="withdraw" class="change">
+        <form id="formWithdraw">
+          <span class="leftColumn">
+            £
+            <input
+              type="number"
+              class="input"
+              id="withdrawAmt"
+              name="withdraw"
+              step="0.01"
+            />
+          </span>
+          <span class="rightColumn">
+            <input type="submit" class="bigButton" value="Withdraw" />
+          </span>
+        </form>
+      </div>
+
+      <div id="changeOverdraftLimit" class="change">
+        <form>
+          <span class="leftColumn">
+            Change Overdraft Limit:
+          </span>
+          <span class="rightColumn">
+            <button type="button" class="smallButton" id="decrease">-</button>
+            <button type="button" class="smallButton" id="increase">+</button>
+          </span>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </div>
+</body>
