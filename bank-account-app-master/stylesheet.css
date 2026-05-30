@@ -1,0 +1,111 @@
+html {
+    background-color: rgb(180,180,180);
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#display {
+    width: 50%;
+    min-width: 500px;
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(87, 75, 168);
+    color: rgb(220,220,220);
+    font-family: 'Raleway', sans-serif;
+}
+
+.currentInfo {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.current {
+    padding: 5px;
+    flex: 1;
+}
+
+.currentAmount {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.inOverdraft {
+    color: rgb(255, 153, 0);
+}
+
+@keyframes flashRed {
+    from {color: rgb(187, 2, 2);}
+    to {color: rgb(220,220,220);}
+}
+
+.messageInfo {
+    font-size: 18px;
+    font-weight: bold;
+    animation-name: flashRed;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+}
+
+#message {
+
+}
+
+#changeInfo {
+
+}
+
+.change {
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.leftColumn {
+    display: inline-block;
+    text-align: right;
+    width: 48%;
+    margin-right: 1%
+}
+.rightColumn {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    margin-left: 1%;
+}
+
+.input {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: rgb(72, 61, 141);
+}
+
+.bigButton {
+    width: 130px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    color: rgb(72, 61, 141);
+    font-weight: bold;
+}
+
+.smallButton {
+    width: 63px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    color: rgb(72, 61, 141);
+    font-weight: bold;
+}
